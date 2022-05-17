@@ -23,7 +23,7 @@ public class ForwardDemoServlet extends HttpServlet {
 
             req.setAttribute(Constants.ATTRIBUTE_USER_NAME_KEY, "Hi, I'm Tom come from Walt Disney !");
 
-            RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/showMe");
+            RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/showMe:");
 
             dispatcher.forward(req, resp);
 
